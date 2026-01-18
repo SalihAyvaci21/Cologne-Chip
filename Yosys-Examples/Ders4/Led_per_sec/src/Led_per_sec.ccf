@@ -1,0 +1,21 @@
+# ------------------------------------------------------------
+# Design: Salih Tekin Avyacı - DEMSAY ELEKTRONİK - 12.06.2025
+# ------------------------------------------------------------
+
+# Clock input (e.g., 10 MHz from onboard oscillator)
+Net "CLK"         Loc = "IO_SB_A8";      # Clock pin
+
+# Push-button input (SW3)
+Net "RESET" Loc = "IO_EB_B0";      # Active-low mechanical button
+
+# 8-bit active-low LED outputs
+Net "LEDS[0]"  Loc = "IO_EB_B1";      # D1
+Net "LEDS[1]"  Loc = "IO_EB_B2";      # D2
+Net "LEDS[2]"  Loc = "IO_EB_B3";      # D3
+Net "LEDS[3]"  Loc = "IO_EB_B4";      # D4
+Net "LEDS[4]"  Loc = "IO_EB_B5";      # D5
+Net "LEDS[5]"  Loc = "IO_EB_B6";      # D6
+Net "LEDS[6]"  Loc = "IO_EB_B7";      # D7
+Net "LEDS[7]"  Loc = "IO_EB_B8";      # D8
+
+# ⚠ No other signals are mapped — submodule outputs remain internal.

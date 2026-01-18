@@ -1,0 +1,18 @@
+# ------------------------------------------------------------
+# Pin Constraint File for debounce_counter_led top module
+# Design: Salih Tekin Ayvacı - DEMSAY ELEKTRONİK - 12.09.2025
+# Purpose: Use SW3 button to trigger LED sequence (active-low)
+# Submodule: debounce_ip_core
+# ------------------------------------------------------------
+
+# Clock input (e.g., 10 MHz from onboard oscillator)
+Net "CLK_IN"         Loc = "IO_SB_A8";      # Clock pin
+
+# Push-button input (SW3)
+Net "RESET_N_IN" Loc = "IO_EB_B0";      # Active-low mechanical button
+
+Net "buzzer_out" Loc = "IO_NB_A7";
+
+
+
+# ⚠ No other signals are mapped — submodule outputs remain internal.

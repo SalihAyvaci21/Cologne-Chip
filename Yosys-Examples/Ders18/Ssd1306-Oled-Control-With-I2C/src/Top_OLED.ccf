@@ -1,0 +1,22 @@
+# ------------------------------------------------------------
+# Design: Salih Tekin Ayvacı - DEMSAY ELEKTRONİK - 12.06.2025
+# ------------------------------------------------------------
+
+# Clock input (10 MHz from onboard oscillator)
+Net "clk"         LOC = "IO_SB_A8";      # Clock pin
+
+# Reset input (aktif düşük, opsiyonel harici buton)
+Net "reset_n"     LOC = "IO_EB_A0";      # Reset butonu
+
+# Push-button input (SW3)
+Net "button"      LOC = "IO_EB_B0";      # Active-low push button
+
+# I2C OLED connections
+Net "SDA"         LOC = "IO_NB_A0";      # OLED SDA
+Net "SCL"         LOC = "IO_NB_A1";      # OLED SCL
+Net "FPS"         LOC = "IO_NB_A2";      # OLED SCL
+
+# FPS test LED outputs (opsiyonel)
+Net "led[0]"      LOC = "IO_EB_B1";      # D1
+Net "led[1]"      LOC = "IO_EB_B2";      # D2
+

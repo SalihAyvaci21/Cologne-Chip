@@ -1,0 +1,29 @@
+# ------------------------------------------------------------
+# Tasarım:  Salih Tekin Ayvacı - DEMSAY ELEKTRONİK
+# Proje:    GateMate CCGM1A1 - HCSR04 ve SSD1306
+# Tarih:    12.06.2025
+# Sürüm:    v2
+# ------------------------------------------------------------
+
+# --- Sistem Pinleri ---
+# Clock input (10 MHz from onboard oscillator)
+Net "clk"         LOC = "IO_SB_A8"; # 10MHz Sistem Saati
+# Reset input (aktif düşük)
+Net "reset_n"     LOC = "IO_EB_A0"; # Reset Butonu
+
+# --- I2C OLED Bağlantıları ---
+Net "SDA"         LOC = "IO_NB_A0"; # OLED SDA (Veri)
+Net "SCL"         LOC = "IO_NB_A1"; # OLED SCL (Saat)
+Net "FPS"         LOC = "IO_NB_B2"; # FPS (Kare Senkronizasyon) Debug Pini
+
+# --- HC-SR04 Ultrasonik Sensör Pinleri ---
+Net "trigger"     LOC = "IO_NB_A5"; # HCSR04 Tetikleme (Çıkış)
+Net "echo"        LOC = "IO_NB_A4"; # HCSR04 Echo (Giriş)
+
+# --- Kullanılmayan (Debug) Pinler ---
+# Net "led[2]"      LOC = "IO_EB_B3";
+# Net "led[3]"      LOC = "IO_EB_B4";
+# Net "led[4]"      LOC = "IO_EB_B5";
+# Net "led[5]"      LOC = "IO_EB_B6";
+# Net "led[6]"      LOC = "IO_EB_B7";
+# Net "led[7]"      LOC = "IO_EB_B8";

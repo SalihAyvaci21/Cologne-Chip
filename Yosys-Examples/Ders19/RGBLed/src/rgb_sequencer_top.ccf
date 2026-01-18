@@ -1,0 +1,16 @@
+# ------------------------------------------------------------
+# Design: Salih Tekin Ayvacı - DEMSAY ELEKTRONİK - 12.06.2025
+# ------------------------------------------------------------
+
+# Clock input (10 MHz from onboard oscillator)
+Net "clk"         LOC = "IO_SB_A8";      # Clock pin
+
+# Reset input (aktif düşük, opsiyonel harici buton)
+Net "n_rst"     LOC = "IO_EB_A0";      # Reset butonu
+
+Net "led_r"       LOC = "IO_NB_A5"; # RGB Kırmızı
+Net "led_g"       LOC = "IO_NB_A4"; # RGB Yeşil
+Net "led_b"       LOC = "IO_NB_A6"; # RGB Mavi
+
+
+
